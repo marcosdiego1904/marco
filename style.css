@@ -33,7 +33,7 @@
     padding-left: 5%;
     padding-top: 50px;
 }
-.main-img{
+.main{
     max-width: 900px;
     height: 380px;
     margin: 40px auto;
@@ -178,12 +178,28 @@ hr{
     height: 100%;
     
 }
-.right{
- 
+.img-cont img{
+    width: 12000px;
+    height: 500px;
+    margin-bottom: -130px;
 }
 #img-cont img{
     width: 900px;
     height: 500px;
+}
+.gie-slideshow{
+    width: 80vw;
+}
+.img-little img{
+    width: 100%;
+    height: 200px;
+}
+.link2{
+    text-decoration: none;
+}
+.link2:hover{
+    text-decoration:underline;
+    color: black;
 }
 .read-more h1{
     color: black;
@@ -209,9 +225,7 @@ hr{
 }
 .relpost{
     background-color: rgb(244, 240, 240);
-    height: 330px;
-    
-    
+    height: 370px;
 }
 .text-related{
     font-family: "Work Sans", sans-serif;
@@ -229,7 +243,114 @@ hr{
     max-width: 1500px;
     padding-top: 100px;
 }
+#outsidelay{
+    width: 100%;
+    background-color: rgb(248, 242, 242);
+}.lay{
+    max-width: 1500px;
+}
+.right1{
+    height: 72vh;
+    background-color: rgb(240, 236, 236);
+}
+.right-title{
+    color: black;
+    text-align: center;
+    padding-top: 40%;
+   margin-left: 9px;
+   font-family: "Oswald", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 700;
+   font-style: normal;
+}
+.right-title h1{
+    font-size: 50px;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+.right-title h1{
+    transition: transform 0.3s ease-in-out;
+}
+.right-title h1:hover {
+    animation: bounce 0.5s; /* Aplicar la animación */
+}
+.left1{
+    height: 80vh;
+    background-color: rgb(248, 242, 242);
+}
+.fatherc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.row1{
+    display: flex;
+     /* Acomoda los elementos horizontalmente */
+     margin-bottom: 50px;
+}
+.itemp{
+    flex: 1; /* Distribuye el espacio disponible de manera uniforme */
+    border: 1px solid #141212;
+    height: 200px;
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+}
+.acolor{
+    text-decoration: none;
+    color: black;
+}
+.acolor:hover{
+    color: black;
+    font-size: 50px;
+}
+.itemp:hover {
+    transform: scale(1.1);
+}
+.subfather{
+    display: flex;
+
+}
+.son1{
+    width: 200px;
+    height: 100%;
+    margin-left: 0;
+}
+.son1 img{
+    height:200px;
+    width: 180px;
+    padding-left: 0;
+}
+.son2{
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    box-sizing: border-box;
+    width: 50%;
+    margin-top: 5%;
+}
+.son2 h4{
+    width:180px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.son2 p{
+    font-weight: 500;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*.father{
+    display: flex;
+    flex-direction: column;
+}*/
 @media(max-width:430px) {
+  
     .title-hero{
         margin-top: 30px;
         margin-bottom: 70px;
@@ -262,6 +383,79 @@ hr{
     }
 }
 
+@media (min-width:1230px){
+    .lay{
+       padding-top: 5%;
+    }
+    .left1{
+        order: 1;
+        padding-left: 90px;
+        
+    }
+    .right1{
+        order: 2;
+      
+    }
+    .subfather{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .son1{
+        width: 400px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .son1 img{
+        height:160px;
+        width:280px;
+        
+    }
+    .son2{
+        font-family: "Work Sans", sans-serif;
+      
+        font-weight: 600;
+        font-style: normal;
+        box-sizing: border-box;
+        width: 100%;
+        margin-top: 5%;
+    }
+    .son2 h4{
+        width:280px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .son2 p{
+        font-weight: 100;
+        font-size: 13px;
+    }
+    .itemp{
+        flex: 1; /* Distribuye el espacio disponible de manera uniforme */
+        border: 1px solid #141212;
+        height: 330px;
+        background-color: white;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+}
+@media(min-width:1390px){
+    .son1 img{
+        height:160px;
+        width:310px;
+        
+    }
+    .son2 p{
+        font-size: 14px;
+    }
+}
+@media(min-width:1460px){
+    .son1 img{
+        height:160px;
+        width:350px;
+        
+    }
+}
 @media (min-width:431px) and (max-width:768px){
     .bb{
         margin: 0 auto;
@@ -309,5 +503,17 @@ hr{
         padding-top: 150px;
     }
 }
-
-
+@media(max-width:1210px){
+    .son1 img{
+        margin-left: -8%;
+        
+    }
+}
+@media(min-width:1026px)and (max-width:1279px){
+    .son1 img{
+        width:280px;
+    }
+    .son2{
+        margin-left: 12%;
+    }
+}
