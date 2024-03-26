@@ -23,7 +23,7 @@
     background-color: whitesmoke;
     margin-top:70px ;
     max-width: 1000px;
-    height: 180vh;
+    height: 200vh;
     -webkit-box-shadow: 9px -4px 12px 0px rgba(107,97,107,1);
     -moz-box-shadow: 9px -4px 12px 0px rgba(107,97,107,1);
     box-shadow: 9px -4px 12px 0px rgba(107,97,107,1);
@@ -67,7 +67,7 @@
 .main-text{
     max-width: 800px;
     margin: 30px auto;
-    font-size: 22px;
+    font-size: 18px;
 }
 .navbar{
     background-color: black;
